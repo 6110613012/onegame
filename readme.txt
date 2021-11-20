@@ -1,5 +1,5 @@
 install django
-	#cd OSG\onegamestand
+	#cd onegamestand
 environment (py1)
 	#workon py1
 runserver
