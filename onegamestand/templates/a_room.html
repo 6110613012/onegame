@@ -9,8 +9,31 @@
     <title>room</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/a_room.css' %}">
+    <style>
+        .button {
+            background-color: red; /* Green */
+            border: none;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            float:right;
+            margin-top: 20px;
+            margin-right: 100px;
+            cursor: pointer;
+          }
+          
+        .button4 {border-radius: 12px;}
+    </style>
 </head>
 <body>
+    <div class="exit">
+        <form action="/" method="get">
+            <button class="button button4">Exit</button>
+            </form>
+    </div>
     <div class="header logo">
         <img src="{% static 'images/ogs.png' %}" class="logo" width="80s" height="80" alt="logo">
         <span class="texthead"> 
@@ -22,7 +45,7 @@
             <div class="row">
                 <div class="col-md-3" style="margin:-50px 0;">
                     <div class="nameroom">
-                        NAME's ROOM
+                        Room's {{rname}}
                     </div>
                 </div>
                 <div class="col-md-9" style="margin:-50px 0">

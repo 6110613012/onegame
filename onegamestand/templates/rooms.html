@@ -17,10 +17,14 @@
             ONE GAME STAND
         </span>
     </div>
+    
     <div class="container">
         <div class="content-rooms">
             <div class="row">
                 <div class="col-md-3" style="margin:-60px 0;">
+                    <div>
+                        <h2>name: {{name}}</h2>
+                    </div>
                     <div class="search">  <!--/action_page.php-->
                         <form class="example" action="" style="margin-top:100px;max-width:300px">
                             <input type="text" placeholder="Search.." name="search2">
@@ -28,7 +32,7 @@
                         </form>
                     </div>
                     <div class="createroom">
-                        <form action="" >
+                        <form action="createroom" method="get">
                         <input type="submit" value="สร้างห้อง" style="margin-top:20px">
                         </form>
                     </div>
