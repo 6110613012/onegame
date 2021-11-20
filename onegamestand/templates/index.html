@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>onegamestand</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}"> 
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          
+        .button4 {border-radius: 12px;}
+          
+        .input-container {
+            display: -ms-flexbox; /* IE10 */
+            width: 50%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            border-radius: 100px;
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .input-field {
+            border-radius: 10px;
+            width: 30%;
+            padding: 10px;
+            outline: none;
+        }
+        
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>
+        <img src="{% static 'images/ogs.png' %}" class="logo" width="200" height="200" alt="logo">
+    </p>
+    <h1 class="a">Your name</h1>
+<form action="/rooms.html" > <!--/action_page.php-->
+  <!-- <label for="fname" class="a">Name:</label>-->
+  <!--<input type="text" id="name" name="name" class="center"><br><br>-->
+    <center>
+    <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+    </div>
+    </center>
+  <center><button class="button button4">Start!</button></center>
+  <!-- <input type="submit" value="Start!" class="center"> -->
+</form>
+<p>Click the "Start!" button and join to talk room".</p>
+</body>
+</html>

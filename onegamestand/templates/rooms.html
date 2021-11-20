@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onegamestand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/rooms.css' %}">
+</head>
+<body>
+    <div class="header logo" style="padding-top:30px;">
+        <img src="{% static 'images/ogs.png' %}" class="logo" width="80s" height="80" alt="logo"style="margin-bottom:20px;">
+        <span class="texthead" > 
+            ONE GAME STAND
+        </span>
+    </div>
+    <div class="container">
+        <div class="content-rooms">
+            <div class="row">
+                <div class="col-md-3" style="margin:-60px 0;">
+                    <div class="search">  <!--/action_page.php-->
+                        <form class="example" action="" style="margin-top:100px;max-width:300px">
+                            <input type="text" placeholder="Search.." name="search2">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="createroom">
+                        <form action="" >
+                        <input type="submit" value="สร้างห้อง" style="margin-top:20px">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-9" style="margin:0 0">
+
+                    <div class="content-room-grid">
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM1</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM2</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM3</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM4</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM5</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                        <div class="content-room-item">
+                            <div class="rooms"></div>
+                            <div class="block-content">
+                               <h2>ROOM6</h2>
+                                <p>Lorem Ipsum is simply.</p>
+                                <a href="#">Read More >></a> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createroom</title>
+    <link rel="stylesheet" href="{% static 'css/createroom.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="bg-block"></div>
+            <div class="centered">
+                <h2>Create your room</h2>
+
+                <form action="">  <!--/action_page.php-->
+                    <label for="rname"><b>room name</b></label><br>
+                    <input type="text" id="fname" name="rname"><br>
+                    <label for="lname"><b>game</b></label><br>
+                    <input type="text" id="game" name="game"><br>
+                    <label for="people"><b>people</b></label>
+                <select name="people" id="people">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br><br>
+                <label for="lname"><b>time</b></label><br>
+                    <input type="text" id="time" name="time"><br><br>
+                    <input type="radio" id="public" name="fav_language" value="public">
+                    <label for="public">public</label><br>
+                    <input type="radio" id="private" name="fav_language" value="private">
+                    <label for="css">private</label><br><br>
+                <b>decription</b><br>
+                <textarea rows="4" cols="50" name="comment" form="usrform">
+                    Enter text here...</textarea><br><br>
+                    <input type="submit" value="create">
+                </form> 
+
+                <p>If you click the "create" button, the form-data will be sent to a page called "/action_page.php".</p>
+            </div>
+    </div>
+</body>
+</html>

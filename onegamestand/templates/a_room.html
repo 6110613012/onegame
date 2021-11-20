@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>room</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/a_room.css' %}">
+</head>
+<body>
+    <div class="header logo">
+        <img src="{% static 'images/ogs.png' %}" class="logo" width="80s" height="80" alt="logo">
+        <span class="texthead"> 
+            ONE GAME STAND
+        </span>
+    </div>
+    <div class="container">
+        <div class="room">
+            <div class="row">
+                <div class="col-md-3" style="margin:-50px 0;">
+                    <div class="nameroom">
+                        NAME's ROOM
+                    </div>
+                </div>
+                <div class="col-md-9" style="margin:-50px 0">
+
+                            <div class="rooms"></div>
+                            <div class="search">  <!--/action_page.php-->
+                                <form class="inputtext" action="" style="margin-left:30px;margin-top:20px;margin-bottom:30px;max-width:1000px">
+                                    <input type="text" placeholder="say someting" name="say"size="113">
+                                    <button type="submit"><i class="fa fa-angle-double-right"></i></button>
+                                </form>
+                            </div>
+                       
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

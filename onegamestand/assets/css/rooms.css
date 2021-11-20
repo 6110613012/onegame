@@ -1,0 +1,42 @@
+body {
+    background-color: grey;
+}
+
+.logo {
+    margin-top: auto;
+    margin-left: 2%;
+    border-radius: 20%;
+}
+
+.header.logo > img,
+.header.logo > p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.texthead {
+    font-size: 50px;
+}
+
+.rooms {
+    height: 250px;
+    width: 250px;
+    background-color: #555;
+    border-radius: 20%;
+}
+
+.content-rooms{
+    margin-top: 100px;
+    
+}
+
+.content-room-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.content-room-item{
+    margin: 30px;
+    margin-bottom: 32px;
+    width: 232px;
+}

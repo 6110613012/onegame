@@ -1,0 +1,45 @@
+body {
+    background-color: lightcoral;
+}
+
+.logo {
+    margin-top: auto;
+    margin-left: 2%;
+    border-radius: 20%;
+}
+
+.header.logo > img,
+.header.logo > p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.texthead {
+    font-size: 50px;
+}
+
+.rooms {
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.col-md-3 {
+    border-radius: 20px 0 0 20px;
+    background-color: aqua;
+}
+.col-md-9 {
+    border-radius: 0 20px 20px 0;
+    background-color: blanchedalmond;
+}
+
+.nameroom {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
